@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Testes/">
+    <Project Path="PlataformaVendas.Dominio.Testes/PlataformaVendas.Dominio.Testes.csproj" Id="92fd47a8-9652-47b5-98d9-02617b027f68" />
+  </Folder>
+  <Project Path="PlataformaVendas.DataTransfer/PlataformaVendas.DataTransfer.csproj" Id="58d63c1b-21ff-4c2d-bf48-09cea03596e9" />
+  <Project Path="PlataformaVendas.Dominio/PlataformaVendas.Dominio.csproj" Id="b2a048e5-5189-45b0-81b7-bb24051f8fd6" />
+  <Project Path="PlataformaVendas.Ioc/PlataformaVendas.Infra.csproj" Id="30d5509c-2c01-430b-b6c2-2bbcc3f69b81" />
+  <Project Path="PlataformaVendas/PlataformaVendas.Api.csproj" />
+</Solution>
