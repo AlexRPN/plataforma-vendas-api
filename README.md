@@ -138,5 +138,3 @@ Este projeto está sob a licença [MIT](LICENSE).
 - GitHub: [@AlexRPN](https://github.com/AlexRPN)
 
 ---
-
-**Desenvolvido com ❤️ usando .NET 10**
