@@ -6,12 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\PlataformaVendas.Ioc\PlataformaVendas.Infra.csproj" />
-  </ItemGroup>
-
 </Project>
