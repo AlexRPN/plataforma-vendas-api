@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PlataformaVendas.Dominio.Telefones.Entidades;
 using PlataformaVendas.Dominio.Usuarios.Entidades;
 using PlataformaVendas.Dominio.UsuariosExterno.Entidades;
 using PlataformaVendas.Dominio.UsuariosLocal.Entidades;
@@ -15,5 +16,6 @@ namespace PlataformaVendas.Infra.Data
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<UsuarioLocal> UsuarioLocal { get; set; }
         public DbSet<UsuarioExterno> UsuarioExterno { get; set; }
+        public DbSet<Telefone> Telefone { get; set; }
     }
 }

@@ -1,9 +1,8 @@
-﻿
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace PlataformaVendas.Dominio.Utils
 {
-    public enum EmailConfirmadoEnum
+    public enum StatusConfirmacaoEnum
     {
         [Description("Não Confirmado")]
         NaoConfirmado = 0,

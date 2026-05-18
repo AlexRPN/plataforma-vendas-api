@@ -1,4 +1,5 @@
-﻿using PlataformaVendas.Dominio.Usuarios.Comandos;
+﻿using PlataformaVendas.Dominio.Telefones.Entidades;
+using PlataformaVendas.Dominio.Usuarios.Comandos;
 using PlataformaVendas.Dominio.UsuariosExterno.Entidades;
 using PlataformaVendas.Dominio.UsuariosLocal.Entidades;
 using PlataformaVendas.Dominio.Utils;
@@ -13,7 +14,7 @@ namespace PlataformaVendas.Dominio.Usuarios.Entidades
         public string Cpf { get; private set; }
         public string? Cnpj { get; private set; }
         public string Email { get; private set; }
-        public EmailConfirmadoEnum EmailConfirmado { get; private set; }
+        public StatusConfirmacaoEnum EmailConfirmado { get; private set; }
         public DateTime? DataEmailConfirmado { get; private set; }
         public TipoUsuarioEnum TipoUsuario { get; private set; }
         public AtivoInativoEnum Situacao { get; private set; }
@@ -25,6 +26,8 @@ namespace PlataformaVendas.Dominio.Usuarios.Entidades
         public UsuarioLocal UsuarioLocal { get; private set; }
         // Relacionamento 1:N com UsuarioExterno
         public ICollection<UsuarioExterno> UsuariosExternos { get; private set; }
+        // Relacionamento 1:1 com Telefone
+        public Telefone Telefone { get; private set; }
         #endregion
 
         private Usuario() { }
@@ -35,7 +38,7 @@ namespace PlataformaVendas.Dominio.Usuarios.Entidades
             SetCpf(comando.Cpf);
             SetEmail(comando.Email);
             SetCnpj(comando.Cnpj);
-            EmailConfirmado = EmailConfirmadoEnum.Pendente;
+            EmailConfirmado = StatusConfirmacaoEnum.Pendente;
             TipoUsuario = comando.TipoUsuario;
             Situacao = AtivoInativoEnum.Ativo;
             DataCadastro = DateTime.UtcNow;
